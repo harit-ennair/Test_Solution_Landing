@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urho — Creative Studio</title>
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Hind:wght@600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+      <a href="#" class="header__logo">urho.</a>
+      <nav class="header__nav" id="main-nav" aria-label="Main navigation">
+        <ul class="header__nav-list">
+          <li><a href="#home" class="header__nav-link">Home</a></li>
+          <li><a href="#about" class="header__nav-link">About</a></li>
+          <li><a href="#portfolio" class="header__nav-link">Portfolio</a></li>
+          <li><a href="#blog" class="header__nav-link">Blog</a></li>
+          <li><a href="#services" class="header__nav-link">Services</a></li>
+          <li><a href="#contact" class="header__nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#contact" class="btn btn--outline-white header__cta">Get a quote</a>
+      <button class="header__burger" id="burger-btn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+  <div class="site">
+
+  
+  <section class="hero" id="home">
+    <div class="hero__bg-elements">
+      <img src="assets/images/hero-elements.svg" alt="" aria-hidden="true" class="hero__decorations">
+    </div>
+
+    
+
+
+    
+    <div class="container hero__content">
+      <div class="hero__text">
+        <p class="subtitle subtitle--light">Offer for individual</p>
+        <h1 class="hero__title">We Create Great<br>& Better Solutions</h1>
+        <p class="hero__desc">The sense of advertising changes every day, so don't wait and check what our agency can offer your company now!</p>
+        <a href="#about" class="btn btn--white">Read more</a>
+      </div>
+      <div class="hero__image">
+        <img src="assets/images/hero-image.svg" alt="Creative team illustration" width="780" height="920">
+      </div>
+    </div>
+
+    
+    <div class="hero__slider-indicator" aria-hidden="true">
+      <span class="line line--active"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </div>
+  </section>
+
+  
+  <section class="about" id="about">
+    <div class="container about__grid">
+      
+      <div class="about__images">
+        <div class="about__img about__img--back"></div>
+        <div class="about__img about__img--front"></div>
+      </div>
+
+      
+      <div class="about__content">
+        <div class="about__text">
+          <p class="subtitle">Find out more</p>
+          <h2 class="section-title">About Our Agency and Why Us</h2>
+          <p class="paragraph">Thoughtful and consistent advertising on the internet of your company is the basis for its effective operation and success.</p>
+        </div>
+
+        <div class="about__services">
+          <div class="service-card">
+            <img src="assets/icons/scissors.svg" alt="" class="service-card__icon" width="80" height="80">
+            <h3 class="service-card__title">Creative Tools</h3>
+            <p class="service-card__text">We only have the latest tools made available by producers of creative products and programs.</p>
+          </div>
+          <div class="service-card">
+            <img src="assets/icons/feather.svg" alt="" class="service-card__icon" width="80" height="80">
+            <h3 class="service-card__title">Image Building</h3>
+            <p class="service-card__text">We will create a brand image for you on the Internet, but also in the real world in the form of advertising.</p>
+          </div>
+          <div class="service-card">
+            <img src="assets/icons/computer.svg" alt="" class="service-card__icon" width="80" height="80">
+            <h3 class="service-card__title">Web Design</h3>
+            <p class="service-card__text">We will design an original look for your website, company or blog, which will be displayed on all devices.</p>
+          </div>
+          <div class="service-card">
+            <img src="assets/icons/scissors.svg" alt="" class="service-card__icon" width="80" height="80">
+            <h3 class="service-card__title">Website Positioning</h3>
+            <p class="service-card__text">If you are looking for effective advertising on the Internet, we will help you position your website.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="boxes" id="services">
+    <div class="box-cta">
+      <div class="box-cta__image box-cta__image--placeholder"></div>
+      <div class="box-cta__content box-cta__content--dark">
+        <h3 class="box-cta__title">Logo is an Important Element of Your Identification</h3>
+        <p class="box-cta__text">It is assumed that a well-prepared creation, which will be identified with our business for years, should meet a number of features. An interesting logo should be at the same time.</p>
+        <a href="#" class="btn btn--text-white">Read more</a>
+      </div>
+    </div>
+    <div class="box-cta">
+      <div class="box-cta__image box-cta__image--placeholder"></div>
+      <div class="box-cta__content box-cta__content--primary">
+        <h3 class="box-cta__title">Website Design is a Complex and Advanced Process</h3>
+        <p class="box-cta__text">In the design process, you can effectively insure your project against unforeseen events. Proven design practices are the only way to improve the performance of a project team.</p>
+        <a href="#" class="btn btn--text-white">
+          <span class="btn__line"></span>
+          Read more
+        </a>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="features" id="features">
+    <div class="container features__grid">
+      <div class="features__content">
+        <p class="subtitle">The features</p>
+        <h2 class="section-title">That Make Our Team Stand Out</h2>
+        <ul class="features__list">
+          <li class="features__item">
+            <img src="assets/icons/check.svg" alt="" width="28" height="28">
+            <span>The only and unique style</span>
+          </li>
+          <li class="features__item">
+            <img src="assets/icons/check.svg" alt="" width="28" height="28">
+            <span>Modern technologies</span>
+          </li>
+          <li class="features__item">
+            <img src="assets/icons/check.svg" alt="" width="28" height="28">
+            <span>Proprietary solutions for companies</span>
+          </li>
+          <li class="features__item">
+            <img src="assets/icons/check.svg" alt="" width="28" height="28">
+            <span>Professional approach to individual projects</span>
+          </li>
+          <li class="features__item">
+            <img src="assets/icons/check.svg" alt="" width="28" height="28">
+            <span>Innovative portfolio</span>
+          </li>
+          <li class="features__item">
+            <img src="assets/icons/check.svg" alt="" width="28" height="28">
+            <span>Exellent opinion on the internet</span>
+          </li>
+          <li class="features__item">
+            <img src="assets/icons/check.svg" alt="" width="28" height="28">
+            <span>Access to huge photo collections</span>
+          </li>
+        </ul>
+        <a href="#" class="btn btn--primary">Learn more</a>
+      </div>
+      <div class="features__image">
+        <img src="assets/images/features-image.svg" alt="Features illustration" width="690" height="975">
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="portfolio" id="portfolio">
+    <div class="portfolio__header">
+      <p class="subtitle">Our portfolio</p>
+      <h2 class="section-title section-title--center">Latest Best Projects</h2>
+      <p class="paragraph paragraph--center">Check out our latest projects and see for yourself if you are ready to cooperate with our creative agency! Choose a good choice and trust our designers.</p>
+    </div>
+    <div class="portfolio__grid">
+      
+      <div class="portfolio__item"></div>
+      <div class="portfolio__item portfolio__item--has-info">
+        <div class="portfolio__info">
+          <h3 class="portfolio__item-title">Awesome Design Bag</h3>
+          <p class="portfolio__item-category">Branding</p>
+        </div>
+      </div>
+      <div class="portfolio__item portfolio__item--alt"></div>
+      <div class="portfolio__item"></div>
+      
+      <div class="portfolio__item portfolio__item--alt"></div>
+      <div class="portfolio__item"></div>
+      <div class="portfolio__item portfolio__item--alt"></div>
+      <div class="portfolio__item"></div>
+    </div>
+    <div class="portfolio__cta">
+      <a href="#" class="btn btn--dark">View more</a>
+    </div>
+  </section>
+
+  
+  <section class="interior" id="interior">
+    <div class="container interior__grid">
+      <div class="interior__image"></div>
+      <div class="interior__content">
+        <p class="subtitle">Our interior</p>
+        <h2 class="section-title">Get to Know Our Agency Even Closer</h2>
+        <p class="paragraph-sm">Our agency creates something more than websites. We build websites whose main task is to generate leads. We treat their business aspect as a priority when designing new websites. We have already completed over 400 designs of websites and online stores. This is the number that allowed us not only to gain vast experience in the design and coding of websites and mobile applications.</p>
+        <a href="#" class="btn btn--primary">Read more</a>
+      </div>
+    </div>
+    <hr class="interior__divider container">
+    <div class="container interior__features">
+      <div class="feature-box">
+        <img src="assets/icons/ranking.svg" alt="" width="80" height="80">
+        <div class="feature-box__text">
+          <h3 class="feature-box__title">Wins and Prizes</h3>
+          <p class="feature-box__desc">Over the years, we have won prizes and awards in the field of graphic design and website positioning.</p>
+        </div>
+      </div>
+      <div class="feature-box">
+        <img src="assets/icons/website.svg" alt="" width="80" height="80">
+        <div class="feature-box__text">
+          <h3 class="feature-box__title">Visitor Growth</h3>
+          <p class="feature-box__desc">Our proprietary system will provide you and your website more visitors, which will improve product sales.</p>
+        </div>
+      </div>
+      <div class="feature-box">
+        <img src="assets/icons/cloud-computing.svg" alt="" width="80" height="80">
+        <div class="feature-box__text">
+          <h3 class="feature-box__title">Data Storage</h3>
+          <p class="feature-box__desc">We provide effective storage of all data that will be necessary to create your new brand or redesign the current.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="solutions">
+    <div class="solutions__layout">
+      <div class="solutions__accent"></div>
+      <div class="solutions__box">
+        <p class="subtitle">Best solutions</p>
+        <h2 class="section-title">Only The Latest Technologies</h2>
+        <p class="paragraph-sm">We often get people who have been looking forward to the initial design of a website that they have ordered from another company for six months. For us, such situations are unacceptable. We know how much a company can gain from a good website, and at the same time how much it can lose when its website is not working properly.</p>
+        <a href="#" class="btn btn--primary">Learn more</a>
+      </div>
+      <div class="solutions__image"></div>
+    </div>
+  </section>
+
+  
+  <section class="logos">
+    <div class="container logos__row">
+      <img src="assets/logos/logoipsum.svg" alt="Logoipsum" class="logos__item" width="160" height="70">
+      <img src="assets/logos/sass.svg" alt="Sass" class="logos__item" width="160" height="70">
+      <img src="assets/logos/behance.svg" alt="Behance" class="logos__item" width="160" height="70">
+      <img src="assets/logos/envato.svg" alt="Envato" class="logos__item" width="160" height="70">
+      <img src="assets/logos/jquery.svg" alt="jQuery" class="logos__item" width="160" height="70">
+    </div>
+  </section>
+
+  
+  <section class="testimonials" id="testimonials">
+    <div class="testimonials__bg-elements">
+      <img src="assets/images/testimonials-elements.svg" alt="" aria-hidden="true" class="testimonials__decorations">
+    </div>
+    <div class="container">
+      <div class="testimonials__header">
+        <p class="subtitle subtitle--light">Testimonials</p>
+        <h2 class="section-title section-title--center section-title--white">Customer Words</h2>
+      </div>
+      <div class="testimonials__grid">
+        <div class="testimonial-card">
+          <p class="testimonial-card__text">Awesome projects! Professional approach to the client. Very creative team and above all people with passion and timing!</p>
+          <div class="testimonial-card__author">
+            <h4 class="testimonial-card__name">Daniel McKenlly</h4>
+            <p class="testimonial-card__role">Individual client</p>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-card__text">My old website got a new life thanks to the Urho Agency. It is really amazing what my project went through, I'm very impressed with what the Urho team has done. I recommend this agency.</p>
+          <div class="testimonial-card__author">
+            <h4 class="testimonial-card__name">Elizabeth Smiths</h4>
+            <p class="testimonial-card__role">ThemeForest</p>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-card__text">I highly recommend agency services. It is a professional and creative company that takes its customers and their expectations very seriously.</p>
+          <div class="testimonial-card__author">
+            <h4 class="testimonial-card__name">Adam Tylor</h4>
+            <p class="testimonial-card__role">Envato Team</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonials__dots" aria-hidden="true">
+        <img src="assets/images/dots-slider.svg" alt="" width="48" height="16">
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="blog" id="blog">
+    <div class="container">
+      <div class="blog__header">
+        <p class="subtitle">From the blog</p>
+        <h2 class="section-title section-title--center">Recent News</h2>
+      </div>
+      <div class="blog__grid">
+        <article class="blog-card">
+          <div class="blog-card__image"></div>
+          <div class="blog-card__content">
+            <p class="blog-card__meta">03 Jan 2022 by Robert Daniels</p>
+            <h3 class="blog-card__title">Why is it Worth Investing in New Solutions?</h3>
+            <p class="blog-card__excerpt">Donec eget eros vel ante vehicula efficitur eu et purus. Donec ut nibh eget ex dignissim pellentesque.</p>
+          </div>
+        </article>
+        <article class="blog-card blog-card--active">
+          <div class="blog-card__image"></div>
+          <div class="blog-card__content">
+            <p class="blog-card__meta">16 Dec 2021 by Sandra Owen</p>
+            <h3 class="blog-card__title">Graphic Design at Home or Office in Corporate?</h3>
+            <p class="blog-card__excerpt">Nullam aliquet, nibh quis semper posuere, turpis sem ornare leo, sit amet egestas sem ligula.</p>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-card__image"></div>
+          <div class="blog-card__content">
+            <p class="blog-card__meta">22 Nov 2020 by Robert Daniels</p>
+            <h3 class="blog-card__title">Graphic Trends in The Upcoming 2023</h3>
+            <p class="blog-card__excerpt">Aenean ut gravida dui. Sed id est quis risus bibendum ultrices. Phasellus eleifend elit eget diam finibus.</p>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-card__image"></div>
+          <div class="blog-card__content">
+            <p class="blog-card__meta">01 May 2020 by Admin</p>
+            <h3 class="blog-card__title">Designing Mobile Applications in Figma</h3>
+            <p class="blog-card__excerpt">Integer dolor urna, porttitor tempor rhoncus non, convallis ac augue. Vivamus venenatis ex sem.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer class="footer" id="contact">
+    
+    <div class="footer__top">
+      <p class="footer__brand-text">Urho Creative Studio</p>
+      <a href="#" class="footer__logo">urho.</a>
+      <div class="footer__social">
+        <a href="#" aria-label="Twitter"><img src="assets/icons/twitter.svg" alt="" width="28" height="28"></a>
+        <a href="#" aria-label="Facebook"><img src="assets/icons/facebook.svg" alt="" width="26" height="26"></a>
+        <a href="#" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt="" width="26" height="26"></a>
+        <a href="#" aria-label="LinkedIn"><img src="assets/icons/linkedin.svg" alt="" width="26" height="26"></a>
+      </div>
+    </div>
+
+    
+    <div class="footer__main">
+      <div class="container footer__grid">
+        
+        <div class="footer__col">
+          <h4 class="footer__col-title">About Our Agency</h4>
+          <p class="footer__col-text">Together with our clients, we still want to look for new places for a positive message, the effect of which is Urho Creative Studio – the juicy and tempting freshness of your brand, in which customers will taste.</p>
+          <a href="#" class="btn btn--text-white">Read more</a>
+        </div>
+
+        
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contact Info</h4>
+          <div class="footer__contact-item">
+            <img src="assets/icons/home.svg" alt="" width="28" height="28">
+            <p>1244 Mission College Blvd<br>Santa Clara, CA 95188<br>United States</p>
+          </div>
+          <div class="footer__contact-item">
+            <img src="assets/icons/envelope.svg" alt="" width="28" height="28">
+            <p>office@urhocreative.com<br>info@urhocreative.com</p>
+          </div>
+          <div class="footer__contact-item">
+            <img src="assets/icons/phone.svg" alt="" width="28" height="28">
+            <p>+1 408-888-1700<br>+1 408-888-1900</p>
+          </div>
+        </div>
+
+        
+        <div class="footer__col">
+          <h4 class="footer__col-title">Navigation</h4>
+          <ul class="footer__links">
+            <li><a href="#"><img src="assets/icons/arrow-right.svg" alt="" width="20" height="28"> Home</a></li>
+            <li><a href="#" class="footer__link--active"><img src="assets/icons/arrow-right-hover.svg" alt="" width="20" height="28"> About</a></li>
+            <li><a href="#"><img src="assets/icons/arrow-right.svg" alt="" width="20" height="28"> Portfolio</a></li>
+            <li><a href="#"><img src="assets/icons/arrow-right.svg" alt="" width="20" height="28"> Blog</a></li>
+            <li><a href="#"><img src="assets/icons/arrow-right.svg" alt="" width="20" height="28"> Services</a></li>
+            <li><a href="#"><img src="assets/icons/arrow-right.svg" alt="" width="20" height="28"> Contact</a></li>
+          </ul>
+        </div>
+
+        
+        <div class="footer__col">
+          <h4 class="footer__col-title">Useful Links</h4>
+          <ul class="footer__links">
+            <li><a href="#"><img src="assets/icons/arrow-right.svg" alt="" width="20" height="28"> Our portfolio on Dribbble</a></li>
+            <li><a href="#"><img src="assets/icons/arrow-right.svg" alt="" width="20" height="28"> Free graphic materials</a></li>
+            <li><a href="#"><img src="assets/icons/arrow-right.svg" alt="" width="20" height="28"> Additional design elements</a></li>
+            <li><a href="#" class="footer__link--active"><img src="assets/icons/arrow-right-hover.svg" alt="" width="20" height="28"> Fact from the world of design</a></li>
+            <li><a href="#"><img src="assets/icons/arrow-right.svg" alt="" width="20" height="28"> Copyright and information</a></li>
+          </ul>
+        </div>
+      </div>
+
+      
+      <div class="footer__copyright">
+        <hr class="footer__line">
+        <p>© 2022  •  Urho  •  Creative Studio Template</p>
+      </div>
+    </div>
+  </footer>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
